@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="./prettify/prettify.css">
+  <script src="./prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>SEEDA Style Guide</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav>
+      <a href="#"><img src="./img/logo.png" alt="Seeda's logo" class="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#interaction">Interaction</a></li>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#combined_elements">Combined Elements</a></li>
+        <li><a href="#branding">Branding</a></li>
+        <li><a href="#templates">Templates</a></li>
+        <li><a href="#citation">Citation</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-banner">
+    <h1 class="landing-header">SEEDA Style Guide</h1>
+  </div>
+
+
+
+  <main>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interaction" class="element">
+      <h2>Interaction</h2>
+
+
+      <section>
+        <h3>In-text link</h3>
+
+        <h4>Sample Code</h4>
+        <pre
+          class="prettyprint"><code> &lt;p&gt;This is an &lt;a href=&quot;https://google.com/&quot;&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <p>This is an <a href="https://google.com/">in-text link</a>.</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section>
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample Code</h4>
+        <pre
+          class="prettyprint"><code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section>
+
+
+      <section>
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS Selector</h4>
+        <p>input[type=Submit]</p>
+        <p>input[type=Reset]</p>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </section>
+
+
+      <section>
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS Selector</h4>
+        <p>input[type=text]</p>
+
+        <!-- Learned about inputs from here: https://www.w3schools.com/tags/tag_input.asp -->
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;form&gt;
+    &lt;label for=&quot;form-textInput&quot;&gt;Input label&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;form-textInput&quot; name=&quot;form-textInput&quot; placeholder=&quot;Enter your text here&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <form>
+          <label for="form-textInput">Input label</label>
+          <input type="text" id="form-textInput" name="form-textInput" placeholder="Enter your text here">
+        </form>
+
+      </section>
+
+
+      <section>
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS Selector</h4>
+        <p>input[type="radio"]</p>
+
+        <!-- Learned about radio elements from here: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+        <h4>Sample Code</h4>
+        <pre
+          class="prettyprint"><code>&lt;label for=&quot;option&quot;&gt;Option 1&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;option&quot; name=&quot;option&quot; value=&quot;choice1&quot;&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <label for="option">Option 1</label>
+        <input type="radio" id="option" name="option" value="choice1">
+      </section>
+
+
+      <section>
+        <h3>Image as a Link</h3>
+
+        <h4>CSS Selector</h4>
+        <p>.image-link</p>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code> &lt;div class=&quot;image-link&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;./img/img-link.png&quot; alt=&quot;A link image&quot;&gt;&lt;/a&gt;
+ &lt;/div&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <div class="image-link">
+          <a href="#"><img src="./img/img-link.png" alt="A link image"></a>
+        </div>
+      </section>
+
+    </section>
+
+
+
+
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text" class="element">
+      <h2>Text</h2>
+
+      <section>
+        <h3>Headings</h3>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt; 
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <h3 class="heading-1">Heading 1</h3>
+        <h3 class="heading-2">Heading 2</h3>
+        <h3 class="heading-3">Heading 3</h3>
+        <h3 class="heading-4">Heading 4</h3>
+      </section>
+
+      <section>
+        <h3>Paragraphs</h3>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;p&gt;
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sapiente natus omnis non quasi 
+   voluptatum temporibus? Minus, modi voluptate distinctio nemo ea odio culpa quos dolore 
+   porro quis quae impedit hic labore autem doloremque similique corrupti. Consequatur 
+   recusandae perspiciatis magni itaque, repellendus natus consectetur aspernatur molestias 
+   facere odit, ratione officiis.
+&lt;/p&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sapiente natus omnis non quasi voluptatum
+          temporibus? Minus, modi voluptate distinctio nemo ea odio culpa quos dolore porro quis quae impedit hic labore
+          autem doloremque similique corrupti. Consequatur recusandae perspiciatis magni itaque, repellendus natus
+          consectetur aspernatur molestias facere odit, ratione officiis.</p>
+
+      </section>
+
+      <section>
+        <h3>Numbered Lists</h3>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" class="element">
+      <h2>Combined Elements</h2>
+
+      <!-- Navigation bar is based on https://codepen.io/mutedblues/pen/MmPNPG -->
+      <section>
+        <h3>Main Navigation</h3>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;header class=&quot;header&quot;&gt;
+  &lt;nav&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;./img/logo.png&quot; alt=&quot;Seeda's logo&quot; class=&quot;logo&quot;&gt;&lt;/a&gt;
+    &lt;input class=&quot;menu-btn&quot; type=&quot;checkbox&quot; id=&quot;menu-btn&quot; /&gt;
+    &lt;label class=&quot;menu-icon&quot; for=&quot;menu-btn&quot;&gt;&lt;span class=&quot;navicon&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;ul class=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Stories&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+
+
+        <h4>Rendered Element</h4>
+        <header class="header demo">
+          <nav>
+            <a href="#"><img src="./img/logo.png" alt="Seeda's logo" class="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn-demo" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Stories</a></li>
+            </ul>
+          </nav>
+        </header>
+
+
+
+      </section>
+
+      <section>
+        <h3>Product/Service Listing</h3>
+
+        <h4>CSS Selector</h4>
+        <p>.card-wrapper</p>
+        <p>.card</p>
+        <p>.card-image</p>
+        <p>.card-content</p>
+        <p>.card-title</p>
+        <p>.card-info</p>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;div class=&quot;card-wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img src=&quot;./img/product-1.jpg&quot; alt=&quot;Project management&quot; class=&quot;card-image&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+          &lt;h4 class=&quot;card-title&quot;&gt;Product 1&lt;/h4&gt;
+          &lt;p class=&quot;card-info&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img src=&quot;./img/product-2.jpg&quot; alt=&quot;Consulting&quot; class=&quot;card-image&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+          &lt;h4 class=&quot;card-title&quot;&gt;Product 2&lt;/h4&gt;
+          &lt;p class=&quot;card-info&quot;&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img src=&quot;./img/product-3.jpg&quot; alt=&quot;Consulting&quot; class=&quot;card-image&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+          &lt;h4 class=&quot;card-title&quot;&gt;Product 3&lt;/h4&gt;
+          &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nobis!&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
+
+
+        <h4>Rendered Element</h4>
+        <div class="card-wrapper">
+          <div class="card">
+            <a href="#">
+              <img src="./img/product-1.jpg" alt="Project management" class="card-image">
+              <div class="card-content">
+                <h4 class="card-title">Product 1</h4>
+                <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img src="./img/product-2.jpg" alt="Consulting" class="card-image">
+              <div class="card-content">
+                <h4 class="card-title">Product 2</h4>
+                <p class="card-info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img src="./img/product-3.jpg" alt="Consulting" class="card-image">
+              <div class="card-content">
+                <h4 class="card-title">Product 3</h4>
+                <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nobis!</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <section>
+        <h3>Order Request Form</h3>
+
+        <h4>CSS Selector</h4>
+        <p>.order-request</p>
+        <p>.input-group-1</p>
+        <p>.input-group-2</p>
+        <p>.input-grouop-3</p>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;form action=&quot;#&quot; class=&quot;order-request&quot;&gt;
+    &lt;div class=&quot;input-group-1&quot;&gt;
+      &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; placeholder=&quot;First Name&quot;&gt;
+      &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; placeholder=&quot;Last Name&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;input-group-2&quot;&gt;
+      &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+      &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;Phone Number&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;input-group-3&quot;&gt;
+      &lt;textarea rows=&quot;8&quot; cols=&quot;50&quot; name=&quot;comment&quot; form=&quot;usrform&quot;
+        placeholder=&quot;Provide your request or comments&quot;&gt;&lt;/textarea&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <form action="#" class="order-request">
+          <div class="input-group-1">
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+          </div>
+
+          <div class="input-group-2">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+          </div>
+
+          <div class="input-group-3">
+            <textarea rows="8" cols="50" name="comment" placeholder="Provide your request or comments"></textarea>
+            <input name="submit" type="submit" value="Submit">
+          </div>
+        </form>
+
+
+
+      </section>
+
+
+
+      <section>
+        <h3>Order Confirmation</h3>
+
+        <h4>CSS Selector</h4>
+        <p>.order-confirm</p>
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;div class=&quot;order-confirm&quot;&gt;
+  &lt;p&gt;Thank you for contacting SEEDA. We will respond to your request shortly.&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+
+        <h4>Rendered Element</h4>
+        <div class="order-confirm">
+          <p>Thank you for contacting SEEDA. We will respond to your request shortly.</p>
+        </div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="branding" class="element">
+      <h2>Branding</h2>
+      <section>
+        <h4>What the company offers</h4>
+        <p>The comapny (SEEDA) provides engineering and project management services to clients in oil, gas, mining,
+          petrochemical, pipeline, infrastructure, power generation and water treatment projects.</p>
+
+        <h4>The potential customers</h4>
+        <p>Potential customers include investors, energy and infrastructure operators, as well as engineering,
+          procurement and construction organizations that are seeking experts in order to receive advice in these areas.
+        </p>
+
+        <h4>Why this comapny might entice someone to purchase their service</h4>
+        <p>The company is run by a diverse team of experts who can provide new perspectives on the client's projects,
+          reducing environmental footprints and lowering costs. In addition to their associates, SEEDA also has access
+          to many engineers who are based in Western Canada.</p>
+      </section>
+
+      <h2>Brand components</h2>
+
+      <section>
+        <h3>Typeface</h3>
+        <h4 class="bold">IBM Plex Sans</h4>
+        <h4 class="semi-bold"></h4>
+        <h4 class="medium">IBM Plex Sans</h4>
+        <h4 class="regular">IBM Plex Sans</h4>
+        <h4 class="light">IBM Plex Sans</h4>
+        <h4 class="extra-light">IBM Plex Sans</h4>
+        <h4 class="thin">IBM Plex Sans</h4>
+      </section>
+
+      <section>
+        <h3>Colour</h3>
+
+        <!-- Inspired by IBM's design guide -->
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;div class=&quot;palette-wrapper&quot;&gt;
+  &lt;div class=&quot;swatch black&quot;&gt;Black&lt;br&gt; (#000)&lt;/div&gt;
+  &lt;div class=&quot;swatch dark-gray&quot;&gt;Dark Gray&lt;br&gt; (#131619)&lt;/div&gt;
+  &lt;div class=&quot;swatch gray&quot;&gt;Gray&lt;br&gt; (#353A3E)&lt;/div&gt;
+  &lt;div class=&quot;swatch light-gray&quot;&gt;Light Gray&lt;br&gt; (#C2C7CC)&lt;/div&gt;
+  &lt;div class=&quot;swatch red&quot;&gt;Red&lt;br&gt; (#EE0005)&lt;/div&gt;
+  &lt;div class=&quot;swatch pale-red&quot;&gt;Pale Red &lt;br&gt; (#FF1D27)&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <div class="palette-wrapper">
+          <div class="swatch black">Black<br> (#000)</div>
+          <div class="swatch dark-gray">Dark Gray<br> (#131619)</div>
+          <div class="swatch gray">Gray<br> (#353A3E)</div>
+          <div class="swatch light-gray">Light Gray<br> (#C2C7CC)</div>
+          <div class="swatch red">Red<br> (#EE0005)</div>
+          <div class="swatch pale-red">Pale Red <br> (#FF1D27)</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Potential Imagery</h3>
+        <div class="potential-imagery">
+          <img src="./img/imagery-1.png" alt="Imagery example">
+          <img src="./img/imagery-2.png" alt="Imagery example">
+          <img src="./img/banner-1.png" alt="Branding example">
+          <img src="./img/banner-2.png" alt="Branding example">
+        </div>
+
+        <img src="./img/landing.png" alt="Landing example" class="single-image">
+        <img src="./img/team.png" alt="Team example">
+
+      </section>
+
+    </section>
+
+
+    <section id="templates" class="element">
+      <h2>Templates</h2>
+
+      <h3 id="services">Services List</h3>
+      <p>Click <a href="./product-listing.html">here</a> to look at the template.</p>
+
+      <h3 id="checkout">Checkout</h3>
+      <p>Click <a href="./checkout.html">here</a> to look at the template.</p>
+
+
+    </section>
+
+
+
+    <section id="citation" class="element">
+      <h2>Citation</h2>
+
+      <ul>
+        <li>Abbink, M. (2017). IBM Plex Sans [Font]. Retrieved from <a
+            href="https://fonts.google.com/specimen/IBM+Plex+Sans#about">Google Fonts</a>.</li>
+        <li>ThisisEngineering RAEng. (2020). Male sports engineer tests tennis equipment [Image] Retrieved from <a
+            href="https://unsplash.com/photos/EUXD3xC6T30">Unsplash</a>.</li>
+
+        <li>Henderson, G. (2019) [Untitled photograph of a woman signing papers] Retrieved from <a
+            href="https://unsplash.com/photos/HJckKnwCXxQ">Unsplash</a>.</li>
+
+        <li>Würth, K. (2016) Windmill field [Image] Retrieved from <a
+            href="https://unsplash.com/photos/J46zikTFe7E">Unsplash</a>.</li>
+
+        <li>ThisisEngineering RAEng. (2020). Testing tennis balls [Image] Retrieved from <a
+            href="https://unsplash.com/photos/nyAzMQ6Ejgs">Unsplash</a>.</li>
+
+        <li>ThisisEngineering RAEng. (2020). Sports engineers test tennis equipment [Image] Retrieved from <a
+            href="https://unsplash.com/photos/grDTSAnM8b4">Unsplash</a>.</li>
+
+        <li>Science in HD. (2019). NREL researchers work in the Systems Performance Laboratory (SPL) on the NODES
+          program using multiple inverters.
+          [Image] Retrieved from <a href="https://unsplash.com/photos/7mAYDCamwrQ">Unsplash</a>.</li>
+
+        <li>SEEDA. (n.d.). [Images of SEEDA's team] Retrieved from <a href="https://www.seeda.ca/">SEEDA</a>.</li>
+
+        <li>SEEDA. (n.d.). [Logo image] Retrieved from <a href="https://www.seeda.ca/">SEEDA</a>.</li>
+
+        <li>Gibbons, J. The Damn Dam [Image] Retrieved from <a
+            href="https://unsplash.com/photos/E2TVn-NpCU4">Unsplash</a>.</li>
+
+        <li>Henao, I. (2019) [Untitled photograph of a construction site] Retrieved from <a
+            href="https://unsplash.com/photos/2DK-CP_WAuw">Unsplash</a>.</li>
+
+        <li>Girardet, E. (2017). Foreign workers are building the highest skyscrapers of the world in southeast asia.
+          often under precarious working conditions.
+          retrieved from <a href="https://unsplash.com/photos/sgYamIzhAhg">Unsplash</a>.</li>
+
+        <li>ThisisEngineering RAEng. (2020). Female electronics engineer discusses data in meeting with colleague
+          [Image] Retrieved from <a href="https://unsplash.com/photos/uOhBxB23Wao">Unsplash</a>.</li>
+      </ul>
+
+    </section>
+
+
+  </main>
+
+</body>
+
+
+</html>

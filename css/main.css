@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #111;
+    max-width: 50rem;
+}
+
+a {
+    color: #FF1718;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    border-radius: 0.3rem;
+}
+
+code {
+    display: block;
+    padding: 1rem;
+    font-family: 'Inconsolata', sans-serif;
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+/* header */
+
+.header {
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid #BBBBBB;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header.demo {
+    border: transparent;
+    position: relative;
+    top: unset;
+    z-index: 2;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.header li a {
+    display: block;
+    padding: 13px 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #222;
+    transition: 0.2s;
+}
+
+.header li a:hover, .header .menu-btn:hover {
+    color: #FE1E28;
+    transition: 0.2s;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    width: 7rem;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .3s ease;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 24px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #111;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .3s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #111;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 540px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 65em) {
+    .header li {
+        float: left;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .demo {
+        margin-bottom: 6rem;
+        background-color: #DEDDE1;
+    }
+}
+
+/* body */
+
+.main-banner {
+    background-color: #353A3E;
+    margin-top: -0.5rem;
+}
+
+.landing-header {
+    color: white;
+    padding: 7rem 1rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 0rem 1rem;
+}
+
+.element h2 {
+    border-bottom: 0.3rem solid #111;
+    margin-top: 6rem;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* For display purposes (to remove warnings) */
+
+.heading-1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.heading-2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.heading-3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.heading-4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #111;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: #8b8b8b;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #00382F;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.extra-light {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* COLOUR */
+
+.palette-wrapper {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    max-width: 60rem;
+}
+
+.swatch {
+    padding: 5rem 1.5em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.red {
+    background-color: #EE0005;
+    color: white;
+}
+
+.pale-red {
+    background-color: #FF1D27;
+    color: white;
+}
+
+.black {
+    background-color: #000;
+    color: white;
+}
+
+.dark-gray {
+    background-color: #131619;
+    color: white;
+}
+
+.gray {
+    background-color: #353A3E;
+    color: white;
+}
+
+.light-gray {
+    background-color: #C2C7CC;
+    color: black;
+}
+
+
+
+/* Image size */
+
+.large {
+    max-width: 80%;
+}
+
+.medium {
+    max-width: 50%;
+}
+
+.small {
+    max-width: 20rem;
+}
+
+/* Submit and reset buttons */
+
+.button-nav {
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-nav:hover {
+    background-color: #333;
+    color: white;
+}
+
+input[type="submit"], input[type="reset"] {
+    color: white;
+    background-color: #FF001D;
+    font-size: 1rem;
+    padding: 1rem 3.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    border: none;
+    background-color: #df001a;
+    transition: 0.2s;
+}
+
+/* Form */
+
+textarea {
+    border: none;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+    margin-top: 0.3rem;
+    font-family: 'Heebo';
+    font-size: 1rem;
+    font-weight: 400;
+    resize: vertical;
+    outline-color: red;
+}
+
+/* Learned about focus from here: https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus */
+
+
+input {
+    padding: 1.5rem;
+    border: none;
+    background-color: #F4F4F4;
+    font-size: 1rem;
+    font-weight: 400;
+    outline-color: red;
+}
+
+.order-confirm {
+    max-width: 36.6rem;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+}
+
+.order-request {
+    display: grid;
+    gap: 1rem;
+    max-width: 40rem
+}
+
+/* learned about fr units from here: https://css-tricks.com/introduction-fr-css-unit/ */
+
+.input-group-1, .input-group-2 {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+    gap: 1rem;
+}
+
+.input-group-3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    width: inherit;
+}
+
+::placeholder {
+    color: #999999;
+}
+
+label {
+    display: block;
+}
+
+/* Link image and Brand image grid */
+
+.single-image {
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image-link, .potential-imagery {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 1rem;
+    max-width: 60rem;
+}
+
+/* Cards */
+
+.card-wrapper {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    max-width: 60rem;
+}
+
+.card {
+    transition: 0.2s;
+    filter: grayscale(100%);
+}
+
+.card:hover {
+    transition: 0.2s;
+    filter: grayscale(0%);
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #df001a;
+}
+
+.card-image {
+    max-width: 60rem;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.card-info {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888;
+}

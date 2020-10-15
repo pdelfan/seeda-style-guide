@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./prettify/prettify.css">
+    <script src="./prettify/run_prettify.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>SEEDA Style Guide - Product Listing</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="./index.html"><img src="./img/logo.png" alt="Seeda's logo" class="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Product/Service Listing</h2>
+
+            <h4>CSS Selector</h4>
+            <p>.card-wrapper</p>
+            <p>.card</p>
+            <p>.card-image</p>
+            <p>.card-content</p>
+            <p>.card-title</p>
+            <p>.card-info</p>
+
+            <h4>Sample Code</h4>
+            <pre class="prettyprint"><code>&lt;h3 class=&quot;heading-2&quot;&gt;Services&lt;/h3&gt;
+&lt;div class=&quot;card-wrapper&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-1.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Feasibility studies and reports&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                    nihil.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-2.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Project Management&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-3.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Compliance support&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                    nobis!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-4.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Project Planning&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                    nobis!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-5.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Audit Consultancy&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                    nobis!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img src=&quot;./img/product-6.jpg&quot; alt=&quot;product image&quot; class=&quot;card-image&quot;&gt;
+            &lt;div class=&quot;card-content&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Project Execution&lt;/h4&gt;
+                &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                    nobis!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+
+            <h4>Rendered Element</h4>
+
+            <h3 class="heading-2">Services</h3>
+            <div class="card-wrapper">
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-1.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Feasibility studies and reports</h4>
+                            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                nihil.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-2.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Project Management</h4>
+                            <p class="card-info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-3.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Compliance support</h4>
+                            <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                                nobis!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-4.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Project Planning</h4>
+                            <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                                nobis!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-5.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Audit Consultancy</h4>
+                            <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                                nobis!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./img/product-6.jpg" alt="product image" class="card-image">
+                        <div class="card-content">
+                            <h4 class="card-title">Project Execution</h4>
+                            <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                                nobis!</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+</body>
+
+
+</html>

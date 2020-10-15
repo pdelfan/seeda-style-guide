@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./prettify/prettify.css">
+    <script src="./prettify/run_prettify.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>SEEDA Style Guide - Checkout</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="./index.html"><img src="./img/logo.png" alt="Seeda's logo" class="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h3>Order Request Form</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.order-request</p>
+            <p>.input-group-1</p>
+            <p>.input-group-2</p>
+            <p>.input-grouop-3</p>
+
+            <h4>Sample Code</h4>
+            <pre class="prettyprint"><code>&lt;h3 class=&quot;heading-3&quot;&gt;Thank you for considering SEEDA!&lt;/h3&gt;
+&lt;form action=&quot;#&quot; class=&quot;order-request&quot;&gt;
+    &lt;h3 class=&quot;heading-4&quot;&gt;Please complete the form below, and we will get back to you shortly. If
+        urgent, please contact : 403-966-9848
+    &lt;/h3&gt;    
+    &lt;div class=&quot;input-group-1&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; placeholder=&quot;First Name&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; placeholder=&quot;Last Name&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;input-group-2&quot;&gt;
+        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+        &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;Phone Number&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;input-group-3&quot;&gt;
+        &lt;textarea rows=&quot;8&quot; cols=&quot;50&quot; name=&quot;comment&quot;
+            placeholder=&quot;Provide your request or comments&quot;&gt;&lt;/textarea&gt;
+        &lt;input name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+            <h4>Rendered Element</h4>
+            <h3 class="heading-3">Thank you for considering SEEDA!</h3>
+            <form action="#" class="order-request">
+                <h3 class="heading-4">Please complete the form below, and we will get back to you shortly. If
+                    urgent, please contact : 403-966-9848
+                </h3>
+                <div class="input-group-1">
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </div>
+
+                <div class="input-group-2">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="input-group-3">
+                    <textarea rows="8" cols="50" name="comment"
+                        placeholder="Provide your request or comments"></textarea>
+                    <input name="submit" type="submit" value="Submit">
+                </div>
+            </form>
+
+
+
+        </section>
+
+
+
+
+    </main>
+
+</body>
+
+
+</html>
