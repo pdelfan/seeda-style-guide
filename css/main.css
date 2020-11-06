@@ -746,3 +746,62 @@ label {
 .service p {
     font-size: calc(1.2rem + 6 * ((4.4rem - 320px) / 680));
 }
+
+
+
+/* Footer */
+
+footer {
+    background-color: #121619;
+    color: white;
+    padding: 3rem 1rem 10rem 1rem;
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.wrap-footer {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 13em));
+    justify-content: space-between;
+    row-gap: 3em;
+    column-gap: 3rem;
+    font-size: 1rem;
+}
+
+.footer-list {
+    display: inline-grid;
+    row-gap: 0.5rem;
+}
+
+
+.contact-list .button-nav {
+    background-color: white;
+    color: black;
+}
+
+.contact-list .button-nav:hover {
+    background-color: #bbb;
+}
+
+
+.copyright {
+    color: #bbb;
+}
