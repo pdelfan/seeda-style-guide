@@ -33,6 +33,7 @@
     </nav>
   </header>
 
+
   <div class="main-banner">
     <h1 class="landing-header">SEEDA Style Guide</h1>
   </div>
@@ -132,7 +133,7 @@
       &lt;/p&gt;
     &lt;a href=&quot;#&quot;&gt;Recent projects &gt;&lt;/a&gt;
   &lt;/div&gt;
-  &lt;img src=&quot;./img/imagery-2.png&quot; alt=&quot;Two people talking&quot;&gt;
+  &lt;img src=&quot;./img/product-1.jpg&quot; alt=&quot;Two people talking&quot;&gt;
 &lt;/div&gt;</code></pre>
 
         <h4>Rendered Element</h4>
@@ -154,7 +155,7 @@
 
             <a href="#">Recent projects ></a>
           </div>
-          <img src="./img/imagery-2.png" alt="Two people talking">
+          <img src="./img/product-1.jpg" alt="Two people talking">
         </div>
 
 
@@ -213,7 +214,50 @@
           </div>
         </div>
 
+
+        <h3>Project card</h3>
+        <h4>CSS Selector</h4>
+        <p>.card</p>
+
         <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;div class=&quot;two-column&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;a href=&quot;./pages/struna.html&quot;&gt; &lt;img src=&quot;http://www.sfu.ca/~pdelfana/IAT339/P2/img/about.jpg&quot;
+        alt=&quot;people looking at laptop monitors&quot; class=&quot;image-large&quot;&gt;
+      &lt;h3&gt;STRUNA: Engineering Dashboard&lt;/h3&gt;
+      &lt;h4&gt;Stress/structural Navigator or Engineering Dashboard.
+      &lt;/h4&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;http://www.sfu.ca/~pdelfana/IAT339/P2/img/landing-2.jpeg&quot; alt=&quot;project site&quot;
+        class=&quot;image-large&quot;&gt;
+      &lt;h3&gt;Economic Water &amp; Electricity&lt;/h3&gt;
+      &lt;h4&gt;Providing water and electricity to rural residents.&lt;/h4&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4>Rendered Element</h4>
+        <div class="two-column">
+          <div class="card">
+            <a href="./pages/struna.html"> <img src="http://www.sfu.ca/~pdelfana/IAT339/P2/img/about.jpg"
+                alt="people looking at laptop monitors" class="image-large">
+              <h3>STRUNA: Engineering Dashboard</h3>
+              <h4>Stress/structural Navigator or Engineering Dashboard.
+              </h4>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img src="http://www.sfu.ca/~pdelfana/IAT339/P2/img/landing-2.jpeg" alt="project site"
+                class="image-large">
+              <h3>Economic Water & Electricity</h3>
+              <h4>Providing water and electricity to rural residents.</h4>
+            </a>
+          </div>
+        </div>
 
 
       </section>
@@ -343,10 +387,10 @@
     &lt;label class=&quot;menu-icon&quot; for=&quot;menu-btn&quot;&gt;&lt;span class=&quot;navicon&quot;&gt;&lt;/span&gt;&lt;/label&gt;
     &lt;ul class=&quot;menu&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Stories&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Stories&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/header&gt;</code></pre>
@@ -360,98 +404,158 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Portfolio</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">Stories</a></li>
             </ul>
           </nav>
         </header>
+      </section>
 
 
+      <section>
+        <h3>Project Listing</h3>
+
+        <h4>CSS Selector</h4>
+        <p>.services-list</p>
+        <p>.service</p>
+
+
+        <h4>Sample Code</h4>
+        <pre class="prettyprint"><code>&lt;hr&gt;
+&lt;div class=&quot;other-project four-column&quot;&gt;
+    &lt;h4&gt;Argentina&lt;/h4&gt;
+    &lt;h5&gt;1978-1978&lt;/h5&gt;
+    &lt;h5&gt;Business trips to promote offshore islands development.
+    &lt;/h5&gt;
+    &lt;h5&gt;Coordination with Petrobras.&lt;/h5&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;other-project four-column&quot;&gt;
+    &lt;h4&gt;Ausralia&lt;/h4&gt;
+    &lt;h5&gt;1991-1991&lt;/h5&gt;
+    &lt;h5&gt;Developing a Joint Venture with Australian mining company to act as a mine operator.
+    &lt;/h5&gt;
+    &lt;h5&gt;Kaolin mine development in Tanzania that had been out of production for 30 years.
+    &lt;/h5&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;other-project four-column&quot;&gt;
+    &lt;h4&gt;Ausralia&lt;/h4&gt;
+    &lt;h5&gt;1989-1990&lt;/h5&gt;
+    &lt;h5&gt;Working on Cat Naphtha Hydrotreater Project &ndash; Mobil Australia.
+    &lt;/h5&gt;
+    &lt;h5&gt;Worked out of Melburne Australia.
+    &lt;/h5&gt;
+&lt;/div&gt;
+&lt;hr&gt;</code></pre>
+
+
+        <h4>Rendered Element</h4>
+        <hr>
+        <div class="other-project four-column">
+          <h4>Argentina</h4>
+          <h5>1978-1978</h5>
+          <h5>Business trips to promote offshore islands development.
+          </h5>
+          <h5>Coordination with Petrobras.</h5>
+        </div>
+        <hr>
+        <div class="other-project four-column">
+          <h4>Ausralia</h4>
+          <h5>1991-1991</h5>
+          <h5>Developing a Joint Venture with Australian mining company to act as a mine operator.
+          </h5>
+          <h5>Kaolin mine development in Tanzania that had been out of production for 30 years.
+          </h5>
+        </div>
+        <hr>
+        <div class="other-project four-column">
+          <h4>Ausralia</h4>
+          <h5>1989-1990</h5>
+          <h5>Working on Cat Naphtha Hydrotreater Project – Mobil Australia.
+          </h5>
+          <h5>Worked out of Melburne Australia.
+          </h5>
+        </div>
+        <hr>
 
       </section>
 
       <section>
-        <h3>Product/Service Listing</h3>
+        <h3>Service Listing</h3>
 
         <h4>CSS Selector</h4>
-        <p>.card-wrapper</p>
-        <p>.card</p>
-        <p>.card-image</p>
-        <p>.card-content</p>
-        <p>.card-title</p>
-        <p>.card-info</p>
+        <p>.services-list</p>
+        <p>.service</p>
+
 
         <h4>Sample Code</h4>
-        <pre class="prettyprint"><code>&lt;div class=&quot;card-wrapper&quot;&gt;
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;
-        &lt;img src=&quot;./img/product-1.jpg&quot; alt=&quot;Project management&quot; class=&quot;card-image&quot;&gt;
-        &lt;div class=&quot;card-content&quot;&gt;
-          &lt;h4 class=&quot;card-title&quot;&gt;Product 1&lt;/h4&gt;
-          &lt;p class=&quot;card-info&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
+        <pre class="prettyprint"><code>&lt;div class=&quot;services-list&quot;&gt;
+  &lt;div class=&quot;service&quot;&gt;
+    &lt;h3&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dicta. &lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nemo corporis aliquam adipisci quia,
+      tenetur aspernatur illo recusandae officiis at?&lt;/p&gt;
+  &lt;/div&gt;
 
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;
-        &lt;img src=&quot;./img/product-2.jpg&quot; alt=&quot;Consulting&quot; class=&quot;card-image&quot;&gt;
-        &lt;div class=&quot;card-content&quot;&gt;
-          &lt;h4 class=&quot;card-title&quot;&gt;Product 2&lt;/h4&gt;
-          &lt;p class=&quot;card-info&quot;&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;service&quot;&gt;
+    &lt;h3&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae facere vitae iure ipsum, illum
+      maxime.&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam?&lt;/p&gt;
+  &lt;/div&gt;
 
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;
-        &lt;img src=&quot;./img/product-3.jpg&quot; alt=&quot;Consulting&quot; class=&quot;card-image&quot;&gt;
-        &lt;div class=&quot;card-content&quot;&gt;
-          &lt;h4 class=&quot;card-title&quot;&gt;Product 3&lt;/h4&gt;
-          &lt;p class=&quot;card-info&quot;&gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nobis!&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/a&gt;
-    &lt;/div&gt;
- &lt;/div&gt;</code></pre>
+  &lt;div class=&quot;service&quot;&gt;
+    &lt;h3&gt;Lorem ipsum dolor sit amet consectetur adipisicing.&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sunt eaque animi et minus aspernatur
+      tempore laborum ullam!&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;service&quot;&gt;
+    &lt;h3&gt;Lorem ipsum dolor sit.&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi facilis deleniti id qui!&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;service&quot;&gt;
+    &lt;h3&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate fuga eaque.&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores enim laboriosam deleniti obcaecati
+      officia quaerat ipsum aliquid ad fugiat.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 
         <h4>Rendered Element</h4>
-        <div class="card-wrapper">
-          <div class="card">
-            <a href="#">
-              <img src="./img/product-1.jpg" alt="Project management" class="card-image">
-              <div class="card-content">
-                <h4 class="card-title">Product 1</h4>
-                <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.
-                </p>
-              </div>
-            </a>
+        <div class="services-list">
+          <div class="service">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dicta. </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nemo corporis aliquam adipisci quia,
+              tenetur aspernatur illo recusandae officiis at?</p>
           </div>
 
-          <div class="card">
-            <a href="#">
-              <img src="./img/product-2.jpg" alt="Consulting" class="card-image">
-              <div class="card-content">
-                <h4 class="card-title">Product 2</h4>
-                <p class="card-info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum?</p>
-              </div>
-            </a>
+          <div class="service">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae facere vitae iure ipsum, illum
+              maxime.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam?</p>
           </div>
 
-          <div class="card">
-            <a href="#">
-              <img src="./img/product-3.jpg" alt="Consulting" class="card-image">
-              <div class="card-content">
-                <h4 class="card-title">Product 3</h4>
-                <p class="card-info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nobis!</p>
-              </div>
-            </a>
+          <div class="service">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sunt eaque animi et minus aspernatur
+              tempore laborum ullam!</p>
           </div>
 
+          <div class="service">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi facilis deleniti id qui!</p>
+          </div>
+
+          <div class="service">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate fuga eaque.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores enim laboriosam deleniti obcaecati
+              officia quaerat ipsum aliquid ad fugiat.</p>
+          </div>
         </div>
-
 
       </section>
 
@@ -526,6 +630,49 @@
       </section>
 
     </section>
+
+
+    <section>
+      <h3>Layout (Two column)</h3>
+      <h4>CSS Selector</h4>
+      <p>two-column</p>
+
+
+      <h4>Sample Code</h4>
+      <pre class="prettyprint"><code>&lt;div class=&quot;two-column&quot;&gt;
+  &lt;img src=&quot;./img/imagery-1.png&quot; alt=&quot;two people talking&quot;&gt;
+  &lt;img src=&quot;./img/imagery-2.png&quot; alt=&quot;two people working&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+      <h4>Rendered Element</h4>
+      <div class="two-column">
+        <img src="./img/imagery-1.png" alt="two people talking">
+        <img src="./img/imagery-2.png" alt="two people working">
+      </div>
+
+
+      <h3>Layout (Three column)</h3>
+      <h4>CSS Selector</h4>
+      <p>three-column</p>
+
+
+      <h4>Sample Code</h4>
+      <pre class="prettyprint"><code>&lt;div class=&quot;three-column&quot;&gt;
+  &lt;img src=&quot;./img/imagery-1.png&quot; alt=&quot;two people talking&quot;&gt;
+  &lt;img src=&quot;./img/imagery-2.png&quot; alt=&quot;two people working&quot;&gt;
+  &lt;img src=&quot;./img/imagery-3.png&quot; alt=&quot;a workplace&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+      <h4>Rendered Element</h4>
+      <div class="three-column">
+        <img src="./img/imagery-1.png" alt="two people talking">
+        <img src="./img/imagery-2.png" alt="two people working">
+        <img src="./img/imagery-3.png" alt="a workplace">
+      </div>
+    </section>
+
+
+
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <section id="branding" class="element">
@@ -551,7 +698,7 @@
       <section>
         <h3>Typeface</h3>
         <h4 class="bold">IBM Plex Sans</h4>
-        <h4 class="semi-bold"></h4>
+        <h4 class="semi-bold">IBM Plex Sans</h4>
         <h4 class="medium">IBM Plex Sans</h4>
         <h4 class="regular">IBM Plex Sans</h4>
         <h4 class="light">IBM Plex Sans</h4>
@@ -607,9 +754,7 @@
           <img src="./img/banner-1.png" alt="Branding example">
           <img src="./img/banner-2.png" alt="Branding example">
         </div>
-
-        <img src="./img/landing.png" alt="Landing example" class="single-image">
-        <img src="./img/team.png" alt="Team example">
+        <img src="./img/team.png" alt="Team example" class="single-image">
 
       </section>
 
@@ -633,9 +778,16 @@
     <section id="citation" class="element">
       <h2>Citation</h2>
 
+      <h3>Images and icons</h3>
+
       <ul>
         <li>Abbink, M. (2017). IBM Plex Sans [Font]. Retrieved from <a
             href="https://fonts.google.com/specimen/IBM+Plex+Sans#about">Google Fonts</a>.</li>
+
+        <li>
+          IBM. (2020). IBM UI icons. Retrieved from <a
+            href="https://www.ibm.com/design/language/iconography/ui-icons/library/">IBM</a>.
+        </li>
         <li>ThisisEngineering RAEng. (2020). Male sports engineer tests tennis equipment [Image] Retrieved from <a
             href="https://unsplash.com/photos/EUXD3xC6T30">Unsplash</a>.</li>
 
@@ -645,8 +797,60 @@
         <li>Würth, K. (2016) Windmill field [Image] Retrieved from <a
             href="https://unsplash.com/photos/J46zikTFe7E">Unsplash</a>.</li>
 
+        <li>Science in HD. (2010). NREL researchers work on the microgrid controller evaluation & GHOST model project in
+          the Power Systems Integration Laboratory (PSIL) at the ESIF. Retrieved from <a
+            href="https://unsplash.com/photos/PDyN_y-wUsg">Unsplash</a>.
+        </li>
+
+        <li>IBM. (2020). IBM researchers have already installed the mounting hardware for a jumbo cryostat big enough to
+          hold a quantum computer with 1 million qubits. Retrieved from <a
+            href="https://www.sciencemag.org/news/2020/09/ibm-promises-1000-qubit-quantum-computer-milestone-2023">ScienceMag</a>.
+        </li>
+
+        <li>IBM. (2017). In this photo, IBM scientist Dr. Mark Lantz, holds a one square inch piece of Sony Storage
+          Media Solutions sputtered tape, which can hold 201 Gigabytes, a new world record. Retrieved from <a
+            href="https://newsroom.ibm.com/image-gallery-research?l=5&o=15#gallery_gallery_0:19202"></a>IBM.</li>
+
+        <li>Hinzen, G. (2020). Power. Retrieved from <a href="https://unsplash.com/photos/VCnw5s0Y9Ew">Unsplash</a>.
+        </li>
+
+        <li>ThisisEngineering RAEng. (2020). Female civil engineer discusses theme park attraction plans.
+          Retrieved from <a href="https://unsplash.com/photos/3Z3gnA99PL8">Unsplash</a>.</li>
+
+        <li>IBM. (2020). Retrieved from <a
+            href="https://www.wired.com/story/ibm-googles-quantum-leap-quantum-flop/">Wired</a>.
+        </li>
+
+        <li>ThisisEngineering RAEng. (2020). Female chemical engineer develops clean energy storage solutions. Retrieved
+          from <a href="https://unsplash.com/photos/8yS04veb1TQ">Unsplash</a>.</li>
+
+        <li>IBM. (2017). A team of IBM scientists, led by IBM Fellow Hillery Hunter (pictured), invented breakthrough
+          Deep Learning software and posted record test results showing a leap forward in performance that reduces the
+          wait-time associated with Deep Learning training from days or hours to minutes or seconds. Retrieved from <a
+            href="https://newsroom.ibm.com/image-gallery-research?l=5&o=15#gallery_gallery_0:19201"></a>IBM.</li>
+
+        <li>
+          IBM. (n.d.). Microbiome Research at UC San Diego. Retrieved from <a
+            href="https://newsroom.ibm.com/image-gallery-research#gallery_gallery_0:19175">IBM</a>.
+
+        </li>
+
+        <li>Science in HD. (2010).Thunderbird supercomputer at Sandia National Laboratory.
+          Retrieved from <a href="https://unsplash.com/photos/iPrjQEDnNEY">Unsplash</a>.
+        </li>
+
+        <li>
+          IBM. (n.d.). Mayflower Autonomous Ship Project Team. Retrieved from <a
+            href="https://newsroom.ibm.com/image-gallery-systems#gallery_gallery_0:21598">IBM</a>.
+        </li>
+
         <li>ThisisEngineering RAEng. (2020). Testing tennis balls [Image] Retrieved from <a
             href="https://unsplash.com/photos/nyAzMQ6Ejgs">Unsplash</a>.</li>
+
+        <li>
+          Battaglia, C. (2015). Cafe with view on a cathedral. Retrieved from <a
+            href="https://unsplash.com/photos/BckPaTv1RZ8">Unsplash</a>.
+        </li>
 
         <li>ThisisEngineering RAEng. (2020). Sports engineers test tennis equipment [Image] Retrieved from <a
             href="https://unsplash.com/photos/grDTSAnM8b4">Unsplash</a>.</li>
@@ -654,6 +858,14 @@
         <li>Science in HD. (2019). NREL researchers work in the Systems Performance Laboratory (SPL) on the NODES
           program using multiple inverters.
           [Image] Retrieved from <a href="https://unsplash.com/photos/7mAYDCamwrQ">Unsplash</a>.</li>
+
+        <li>
+          Science in HD. (2019). NREL Thermochemical Process/ Control Engineer and Research Technician work during a 48
+          hour Hot Test in Thermochemical User Facility Pilot Plant in the Field Test Laboratory Building (FTLB).
+          Retrieved from <a href="https://unsplash.com/photos/i4ABHj811N0">Unsplash</a>.
+        </li>
+
+        <li>SEEDA. (n.d.). [Images of SEEDA's projects] Retrieved from<a href="https://www.seeda.ca/">SEEDA</a>.</li>
 
         <li>SEEDA. (n.d.). [Images of SEEDA's team] Retrieved from <a href="https://www.seeda.ca/">SEEDA</a>.</li>
 
@@ -669,8 +881,24 @@
           often under precarious working conditions.
           retrieved from <a href="https://unsplash.com/photos/sgYamIzhAhg">Unsplash</a>.</li>
 
+        <li>
+          SEEDA. (n.d.). Logos of SEEREM, NEW ENGINEER, REDI, IMPROVE SUSTAINABILITY, IMPROVE PROJECTS, SAND CELL
+          STRUCTURES, EPCM and Data Lombard. Retrieved from <a href="https://www.seeda.ca/">SEEDA</a>.
+        </li>
+
         <li>ThisisEngineering RAEng. (2020). Female electronics engineer discusses data in meeting with colleague
           [Image] Retrieved from <a href="https://unsplash.com/photos/uOhBxB23Wao">Unsplash</a>.</li>
+      </ul>
+
+      <h3>Code</h3>
+      <ul>
+        <li>Learned about inputs from <a href="https://www.w3schools.com/tags/tag_input.asp">W3</a>.</li>
+        <li>Learned about implementing navigation bars from <a href="https://codepen.io/mutedblues/pen/MmPNPG">this
+            CodePen</a>.</li>
+        <li>Learned about radio elements from <a href="https://www.w3schools.com/tags/att_input_type_radio.asp">W3</a>.
+        </li>
+        <li>Learned about grids from <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS-Tricks</a>.
+        </li>
       </ul>
 
     </section>
